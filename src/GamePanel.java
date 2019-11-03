@@ -17,7 +17,7 @@ public class GamePanel extends JPanel {
             cell.setFont(new Font("Sans Serif", Font.BOLD, 200));
             cell.addMouseListener(new MouseAdapter() {
                 @Override
-                public void mouseClicked(MouseEvent e) {
+                public void mousePressed(MouseEvent e) {
                     if (SwingUtilities.isRightMouseButton(e)) {
                         cell.setText("o");
                     }
