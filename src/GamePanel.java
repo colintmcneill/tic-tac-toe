@@ -8,6 +8,11 @@ public class GamePanel extends JPanel {
         this.setBackground(Color.BLACK);
         this.setFocusable(true);
         this.setLayout(new GridLayout(3, 2, 3, 3));
+        createGrid();
+
+    }
+
+    public void createGrid() {
         for (int i = 0; i < 9; i++) {
             JLabel cell = new JLabel("");
             cell.setBackground(Color.WHITE);
